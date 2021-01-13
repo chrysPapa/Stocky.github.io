@@ -51,18 +51,14 @@ html, body {
 }
 .btn-primary:hover {
     background-color: #51d44c;
-    border: 1px solid: #51d44c;
+    border: 1px solid #51d44c;
 }
-.btn-submit {
-    color: #d5d5d5;
-    background-color: #2dae28;
-    border: 1px solid #2dae28;
 
+
+.form-control:hover {
+    border: 1px solid #51d44c;
 }
-.btn-submit:hover {
-    background-color: #51d44c;
-    border: 1px solid: #51d44c;
-}
+
 .jumbotron {
     padding: 1rem;
     border-radius: 0;
@@ -136,7 +132,7 @@ hr.light {
     margin-bottom: 1rem;
 }
 
-hooter a {
+footer a {
     color: #d5d5d5;
 }
 
@@ -147,9 +143,48 @@ hr.light-100 {
     margin-bottom: 1rem;
 }
 
+.searchbar{
+    margin-top: 2%;
+    height: 60px;
+    background-color: #2dae28;
+    border-radius: 30px;
+    padding: 10px;
+    }
 
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
 
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    transition: width 0.4s linear;
+    }
+    .search_input::placeholder{
+        color: white;
+    }
+    
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #2dae28;
+    }
 
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    }
 
 
 
@@ -159,16 +194,14 @@ hr.light-100 {
         font-size: 4em;
         padding: 2rem;
     }
+
 }
 
 @media (max-width: 768px) {
 .carousel-caption {
     top: 45%;
 }
-=.btn-submit{
-    top:45%;
 
-=}
     .carousel-caption h1 {
         font-size: 350%
     }
@@ -192,6 +225,7 @@ hr.light-100 {
         font-size: 2.5em;
         padding: 1.2rem;
     }
+    
 }
 
 @media (max-width: 576px) {
