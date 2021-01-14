@@ -54,8 +54,8 @@
             <div class="carousel-caption">
                 <h1 class="display-2">Stock Market analytics</h1>
                 <h3>And general news</h3>
-                <button type="button" class="btn btn-outline-light btn-lg">INFO</button>
-                <button type="button" class="btn btn-primary btn-lg">START</button>
+                <a href="#InfoSection" class="btn btn-outline-light btn-lg">INFO</a>
+                <a href="#SearchSection" class="btn btn-primary btn-lg">START</a>
             </div>
         </div>
         <div class="carousel-item">
@@ -77,21 +77,27 @@
 </div>
 
 <!--- Search Section -->
-
+<section id="SearchSection">
 <div class="row text-center">
     <div class="col-12">
         <h1 class="display-4">Search Engine</h1>
     </div>
 </div>
-<div class="container h-100">
-    <div class="d-flex justify-content-center h-100">
+<div class="container h-50">
+    <div class="d-flex justify-content-center h-50">
       <div class="searchbar">
         <input class="search_input" type="text" name="" placeholder="Search...">
-        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        <a href="#test" class="search_icon" data-toggle="collapse"><i class="fas fa-search"></i></a>
       </div>
     </div>
+    <br>
+    <br>
+    <div id="test" class="collapse">
+            <h2 class="row text-center">Analysis complete</h2>
+            <img src="img/Analysis.png">
+      </div>
   </div>
-
+</section>
 <!--- Fixed background -->
 <figure>
     <div class="fixed-wrap">
@@ -101,6 +107,8 @@
 </figure>
 
 <!--- Two Column Section -->
+<section id="InfoSection"></section>
+<br>
 <div class="container-fluid padding">
     <div class="row text-center padding">
         <div class="col-lg-6">
@@ -135,6 +143,7 @@
     </div>
 <hr class="my-4"> 
 </div>
+
 
 <!--- Connect -->
 <div class="container-fluid padding">
@@ -186,10 +195,5 @@
 </body>
 </html>
 
-
-
-
-
-<!-- End View in Browser: Drew's #1 Trending YouTube Tutorial -->
 
 
